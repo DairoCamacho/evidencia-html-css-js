@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head style="margin: 0 !important; padding: 0 !important">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Dairo Camacho" />
+    <meta name="description" content="Recetas Colombianas" />
+    <meta name="copyright" content="Dairo Camacho" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <title>Receta de arroz con pollo</title>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Normalización de los estilos del navegador -->
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <!-- Import CDN de Materialize -->
+    <link rel="stylesheet" href="./css/materialize.min.css" />
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="modo-oscuro fondo-primario">
+    <header>
+      <div class="navbar">
+        <nav class="fondo-secundario texto-primario">
+          <div class="nav-wrapper fondo-secundario texto-primario">
+            <a
+              href="#"
+              class="waves-effect waves-light brand-logo texto-primario"
+              >Cocina con Dairo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-chef-hat"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 3c1.918 0 3.52 1.35 3.91 3.151a4 4 0 0 1 2.09 7.723l0 7.126h-12v-7.126a4 4 0 1 1 2.092 -7.723a4 4 0 0 1 3.908 -3.151z"
+                />
+                <path d="M6.161 17.009l11.839 -.009" />
+              </svg>
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down texto-primario">
+              <li class="texto-primario waves-effect waves-light">
+                <a href="#">Inicio</a>
+              </li>
+              <li class="texto-primario waves-effect waves-light">
+                <a href="#ingredientes">Ingredientes</a>
+              </li>
+              <li class="texto-primario waves-effect waves-light">
+                <a href="#preparacion">Preparación</a>
+              </li>
+              <li class="texto-primario waves-effect waves-light">
+                <a href="#acompanamiento">Acompañamiento</a>
+              </li>
+              <li class="texto-primario waves-effect waves-light">
+                <div class="switch texto-primario">
+                  <label>
+                    <i class="tiny material-icons left">brightness_2</i>
+                    <!-- Modo Oscuro -->
+                    <input type="checkbox" />
+                    <!-- valor por defecto es: checked="false" -->
+                    <span class="lever"></span>
+                    <!-- Modo Claro -->
+                    <i class="tiny material-icons right">brightness_high</i>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- Navbar Oculto -->
+      <div class="fondo-secundario texto-primario">
+        <ul class="sidenav fondo-secundario texto-primario" id="mobile-demo">
+          <li class="texto-primario waves-effect waves-light">
+            <a href="#">Inicio</a>
+          </li>
+          <li class="texto-primario waves-effect waves-light">
+            <a href="#ingredientes">Ingredientes</a>
+          </li>
+          <li class="texto-primario waves-effect waves-light">
+            <a href="#preparacion">Preparación</a>
+          </li>
+          <li class="texto-primario waves-effect waves-light">
+            <a href="#acompanamiento">Acompañamiento</a>
+          </li>
+          <li class="texto-primario waves-effect waves-light">
+            <div class="switch texto-primario">
+              <label>
+                <!-- <i class="tiny material-icons left">brightness_2</i> -->
+                Modo Oscuro
+                <input type="checkbox" />
+                <span class="lever"></span>
+                Modo Claro
+                <!-- <i class="tiny material-icons right">brightness_high</i> -->
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="fondo-primario">
+      <div class="container fondo-secundario texto-primario">
+        <div class="center-align" id="home">
+          <h1>
+            <strong>
+              Receta fácil y casera de arroz con pollo: un plato único
+              insuperable
+            </strong>
+          </h1>
+          <img class="responsive-img" src="./img/arroz_con_pollo.jpg" />
+        </div>
+
+        <div class="container flow-text">
+          <h2>Temas</h2>
+          <div class="divider"></div>
+
+          <ol class="list fondo-secundario texto-primario">
+            <li class="texto-primario waves-effect waves-light">
+              <a href="#ingredientes">Ingredientes</a>
+            </li>
+            <li class="texto-primario waves-effect waves-light">
+              <a href="#preparacion">Preparación</a>
+            </li>
+            <li class="texto-primario waves-effect waves-light">
+              <a href="#acompanamiento">Acompañamiento</a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="container flow-text" id="ingredientes">
+          <h2>1. Ingredientes</h2>
+          <div class="divider"></div>
+          <div><b>Para 4 personas</b></div>
+          <ul>
+            <li>
+              <span><span>Pollo troceado </span></span>
+              <span>250 <abbr title="gramos">g</abbr></span>
+            </li>
+            <li>
+              <span><span>Arroz blanco </span></span>
+              <span>400 <abbr title="gramos">g</abbr></span>
+            </li>
+            <li>
+              <span><span>Caldo de pollo </span></span>
+              <span>1 <abbr title="litros">l</abbr></span>
+            </li>
+            <li>
+              <span><span>Diente de ajo </span></span>
+              <span>2 <abbr title=""></abbr></span>
+            </li>
+            <li>
+              <span><span>Pimiento rojo </span></span>
+              <span>100 <abbr title="gramos">g</abbr></span>
+            </li>
+            <li>
+              <span><span>Pimiento verde </span></span>
+              <span>100 <abbr title="gramos">g</abbr></span>
+            </li>
+            <li>
+              <span><span>Tomate maduro</span></span>
+              <span>1 <abbr title=""></abbr></span>
+            </li>
+            <li>
+              <span><span>Pulpa de pimiento choricero </span></span>
+              <span>5 <abbr title="gramos">g</abbr></span>
+            </li>
+            <li>
+              <span><span>Vino blanco </span></span>
+              <span>150 <abbr title="mililitros">ml</abbr></span>
+            </li>
+            <li>
+              <span><span>Sal </span></span>
+            </li>
+            <li>
+              <span><span>Pimienta negra molida </span></span>
+            </li>
+            <li>
+              <span><span>Aceite de oliva virgen extra </span></span>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col s6">
+              <img
+                class="responsive-img"
+                src="./img/pollo_troceado.jpg"
+                alt="imagen de un tomate"
+              />
+            </div>
+            <div class="col s6">
+              <img
+                class="responsive-img"
+                src="./img/arroz_blanco.jpeg"
+                alt="imagen de un tomate"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <img
+                class="responsive-img"
+                src="./img/caldo_pollo.jpg"
+                alt="imagen de un tomate"
+              />
+            </div>
+            <div class="col s6">
+              <img
+                class="responsive-img"
+                src="./img/diente_ajo.jpg"
+                alt="imagen de un tomate"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <img
+                class="responsive-img"
+                src="./img/pimientos.jpg"
+                alt="imagen de un pimiento rojo y uno verde"
+              />
+            </div>
+            <div class="col s6">
+              <img
+                class="responsive-img"
+                src="./img/tomate.jpg"
+                alt="imagen de un tomate"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container flow-text" id="preparacion">
+          <h2>2. Preparación</h2>
+          <div class="divider"></div>
+          <div><b>Dificultad: Media</b></div>
+          <ul>
+            <li>
+              <span>Tiempo total</span>
+              <span>40 <abbr title="minutos">m</abbr></span>
+            </li>
+            <li>
+              <span>Elaboración</span>
+              <span>10 <abbr title="minutos">m</abbr></span>
+            </li>
+            <li>
+              <span>Cocción</span>
+              <span>30 <abbr title="minutos">m</abbr></span>
+            </li>
+            <li>
+              <span>Reposo</span>
+              <span>5 <abbr title="minutos">m</abbr></span>
+            </li>
+          </ul>
+          <div class="flow-text">
+            <p>
+              Salpimentamos los trozos de pollo y los
+              <strong>rehogamos en una paella de 40 cm de diámetro</strong> con
+              un chorretón generoso de aceite de oliva virgen extra. Solo
+              queremos que cojan color por fuera, así que, en cuanto se doren
+              ligeramente, los retiramos de la paella y reservamos.
+            </p>
+            <p>
+              Pelamos los dientes de ajo y los picamos finamente. Añadimos un
+              poco más de aceite a la paella si lo vemos necesario y los
+              rehogamos a fuego suave.
+              <strong>Antes de que se doren</strong> añadimos los dos tipos de
+              pimiento, limpios y troceados en pequeños dados, salpimentamos y
+              continuamos rehogando durante un par de minutos.
+            </p>
+            <p>
+              Lavamos bien el tomate, lo cortamos por la mitad y lo rallamos.
+              Añadimos a la paella junto con una cucharada de pimiento
+              choricero. Removemos y rehogamos un par de minutos. Añadimos el
+              vino blanco y dejamos que
+              <strong
+                >se evapore el alcohol antes de incorporar el arroz</strong
+              >
+              y rehogar, sin parar de mover, durante un minuto más.
+            </p>
+            <p>
+              Por último agregamos el pollo a la paella junto con
+              <strong>tres vasos del caldo de pollo</strong> y subimos el fuego
+              al máximo. Reservamos el resto del caldo. Removemos bien para
+              repartir el pollo por todo el recipiente y, cuando arranque a
+              hervir el caldo, contamos tres minutos. Probamos el punto de sal y
+              lo ajustamos si fuera necesario.
+            </p>
+            <p>
+              Transcurrido este tiempo bajamos el fuego y cocemos el arroz con
+              pollo <strong>durante 15 minutos sin tocar el arroz</strong>, ni
+              remover, ni nada parecido. Si el arroz se queda seco de caldo,
+              añadimos el que tenemos reservado poco a poco, pero quizás no sea
+              necesario. Pasado el tiempo de cocción apartamos la paella del
+              fuego, tapamos con una paño limpio y dejamos reposar cinco minutos
+              antes de servir.
+            </p>
+            <p>
+              Para que <strong>el arroz con pollo salga perfecto</strong> es
+              importante que la paella sea del diámetro indicado y que el fuego
+              sobre el que lo cocinemos cubra la totalidad de su base. Si el
+              fuego es más pequeño que la paella, solo se cocerá el centro y el
+              arroz de los laterales quedará crudo. En este caso, si usáis una
+              paella más pequeña que se ajusta a vuestra placa o quemador,
+              reducir las cantidades de ingredientes para que el arroz quede
+              bien esparcido por la base en una capa fina.
+            </p>
+            <div>
+              <img
+                class="responsive-img"
+                src="./img/preparacion.jpg"
+                alt="Cuatro imágenes con el paso a paso para preparar el arroz con pollo"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container flow-text" id="acompanamiento">
+          <h2>3. Acompañamiento</h2>
+          <div class="divider"></div>
+          <p>
+            El <strong>arroz con pollo</strong> es un plato muy completo que
+            puede servirse solo, sin embargo tradicionalmente puede ser
+            acompañado y para ello tenemos varias opciones como una ensalada de
+            lechuga, pan tajado, papas fritas, plátano frito, entre otros.
+          </p>
+          <ul>
+            <li>
+              <h5>Pan</h5>
+              <div class="container">
+                <img
+                  class="responsive-img"
+                  src="./img/arroz_con_pan.jpg"
+                  alt="Imagen de la ensalada de lechuga con tomate y cebolla"
+                />
+              </div>
+            </li>
+            <li>
+              <h5>Ensalada</h5>
+              <div class="container">
+                <img
+                  class="responsive-img"
+                  src="./img/arroz_con_ensalada.jpg"
+                  alt="Imagen de la ensalada de lechuga con tomate y cebolla"
+                />
+              </div>
+            </li>
+            <li>
+              <h5>Papas fritas</h5>
+              <div class="container">
+                <img
+                  class="responsive-img"
+                  src="./img/arroz_con_papas.jpg"
+                  alt="Imagen de la ensalada de lechuga con tomate y cebolla"
+                />
+              </div>
+            </li>
+            <li>
+              <h5>Plátano frito</h5>
+              <div class="container">
+                <img
+                  class="responsive-img"
+                  src="./img/arroz_con_platano.jpg"
+                  alt="Imagen de la ensalada de lechuga con tomate y cebolla"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container row texto-secundario">
+        <div class="col s6">
+          <a
+            href="https://oferta.senasofiaplus.edu.co/"
+            target="_blank"
+            class="link senalink fondo-secundario"
+            >SENA</a
+          >
+        </div>
+        <div class="col s6">
+          <a href="#" class="link backlink fondo-secundario"
+            >Subir<i class="material-icons">arrow_drop_up</i></a
+          >
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="fondo-secundario">
+        <div class="container row">
+          <div class="col s4">
+            <p class="texto-primario">Gastronomía</p>
+            <ul class="texto-secundario">
+              <li>
+                <a href="#">Directo al Paladar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col s4">
+            <p class="texto-primario">Tipos de Recetas</p>
+            <ul class="texto-secundario">
+              <li>
+                <a href="#">Postres</a>
+              </li>
+              <li>
+                <a href="#">Recetas Vegetarianas</a>
+              </li>
+              <li>
+                <a href="#">Recetas Saludables</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col s4">
+            <p class="texto-primario">Estilo de vida</p>
+            <ul class="texto-secundario">
+              <li>
+                <a href="#">Mente Sana</a>
+              </li>
+              <li>
+                <a href="#">Yoga</a>
+              </li>
+              <li>
+                <a href="#">Superación personal</a>
+              </li>
+              <li>
+                <a href="#">Lectura</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

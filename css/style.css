@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* <------> */
+
+html {
+  scroll-behavior: smooth !important;
+}
+@media (prefers-reduce-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+:root {
+  --negro-puro: #000000;
+
+  --negro-suave: #13151d;
+  --negro-suave: #242424;
+
+  --blanco-puro: #ffffff;
+  --blanco-suave: #e2e2e2;
+
+  --color-principal: #4d2ff5;
+}
+/* PARA MODO OSCURO */
+.fondo-primario {
+  background-color: var(--negro-puro) !important;
+}
+.fondo-secundario {
+  background-color: var(--negro-suave) !important;
+}
+
+.texto-primario {
+  color: var(--blanco-puro) !important;
+}
+.texto-secundario {
+  color: var(--blanco-suave) !important;
+}
+
+/* PARA EL MODO CLARO */
+.fondo-primario-claro {
+  background-color: var(--blanco-puro) !important;
+}
+.fondo-secundario-claro {
+  background-color: var(--blanco-suave) !important;
+}
+.texto-primario-claro {
+  color: var(--negro-puro) !important;
+}
+.texto-secundario-claro {
+  color: var(--negro-suave) !important;
+}
+
+.boton-primario {
+  background-color: var(--color-principal) !important;
+}
+.boton-secundario {
+  background-color: var(--negro-suave) !important;
+}
+
+/* color de la BARRITA DEL SWITCH antes de activar */
+.switch label .lever {
+  background-color: var(--blanco-suave);
+}
+/* color de la BARRITA DEL SWITCH después de activar */
+.switch label input[type="checkbox"]:checked + .lever {
+  background-color: var(--negro-suave);
+}
+
+/* color de la ESFERA DEL SWITCH después de activar */
+.switch label input[type="checkbox"]:checked + .lever:after {
+  background-color: var(--negro-suave);
+  border-color: white;
+  border-style: inset;
+}
+
+header ul a,
+header ul li label {
+  color: var(--color-texto-primario);
+}
+
+.footer div,
+.footer div a {
+  text-decoration: none;
+  color: unset;
+  font-weight: bold;
+}
+
+.link {
+  border-radius: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.senalink {
+  float: left;
+}
+
+.backlink {
+  float: right;
+}
+
+.sidenav li {
+  display: block;
+}
+.list li {
+  display: list-item;
+  overflow: visible;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
